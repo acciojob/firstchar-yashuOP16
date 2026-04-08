@@ -1,13 +1,9 @@
 function firstChar(text) {
-	for(let i = 0; i text.length; i++){
-		if(str[i] !== ' '){
-			return str[i]
-		}
-	}
-	return '';
+	let trimmedText = text.trim()
+	return trimmedText.charAt(0)
 }
 
 // Do not change the code below
-//Uncomment the following line to show the prompt popup
-//const text = prompt("Enter text:");
+
+const text = prompt("Enter text:");
 alert(firstChar(text));
